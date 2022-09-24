@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin:0;
+    padding:0;
+    font-family: 'Poppins', 'sans-serif';
+}
+
+
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 2px -2px rgba(3, 1, 1, 0.064);
+
+    padding:20px;
+}
+
+.header-right {
+    display:flex;
+   
+
+}
+
+
+.header-right li{
+   list-style: none;
+
+}
+
+.header-li a {
+    margin-left:20px;
+    font-size:30px;
+    text-decoration: none;
+    font-weight:700;
+    color:black;  
+}
+
+.header-li a:hover {
+    color:#FF2625;  
+    font-weight:700;   
+}
+  
+.section-wrapper {
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-areas: 
+        "title img aboutme"
+        "title img aboutme";
+    grid-column-gap:2em;
+    padding:2em;
+ 
+   
+}
+
+.about-me {
+    grid-area:aboutme;
+}
+
+.pic {
+    max-width:500px;
+    max-height:500px;
+    border-radius:50%;
+    grid-area:img;
+    
+}
+
+.name {
+    font-weight: 700;
+    font-size:3rem;
+    color:#FF2625;  
+    text-transform: uppercase;
+    grid-area:title;
+}
+.section {
+    margin-bottom:10px;
+
+}
+.section-h2 {
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    margin-bottom:5px;
+}
+
+
+.category-wrapper {
+    box-shadow: 0px -3px 5px 0px rgba(3, 1, 1, 0.074);
+    display:flex;
+    justify-content: space-around;
+    flex-direction: row;  
+    min-height:50px;
+    text-align:center;
+
+}
+
+.category-h3 {
+    text-transform: uppercase;
+    font-size:3rem;
+    margin-top:50px;
+}
+
+.test {
+    color:#FF2625; 
+    font-size:1.8rem;
+    font-weight:500;
+}
+
+.skills {
+    font-size:1.8rem;
+}
+
+@media (max-width:1200px) {
+    h1 {
+        font-size:1.6rem;
+    }
+
+    .header-li a{
+        font-size:1.2rem;
+    }
+
+    .test, .name {
+        font-size:1.6rem;
+    }
+    .pic {
+        max-width:300px;
+    }
+    .section-wrapper {
+        grid-template-columns: 1fr 1fr;
+        grid-template-areas: 
+            "title img"
+            "aboutme aboutme";
+        grid-column-gap:1em;
+        padding:2em;
+    }
+    .skills {
+        font-size:1.5rem;
+    }
+
+   
+    .category-h3 {
+        font-size:2rem;
+        margin-top:50px;
+    }
+}
+
