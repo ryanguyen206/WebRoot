@@ -1,0 +1,38 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 4px 2px -2px rgba(3, 1, 1, 0.064);
+    background: #1C2826;
+    color:#d64550;
+    padding:20px;
+}
+
+.header-right {
+    display:flex;
+}
+
+
+.header-right li{
+   list-style: none;
+
+}
+
+.header-li a {
+    margin-left:20px;
+    font-size:30px;
+    text-decoration: none;
+    font-weight:700;
+    color:#d64550;  
+}
+
+.header-li a:hover {
+    color:#FF2625;  
+    font-weight:700;   
+}
