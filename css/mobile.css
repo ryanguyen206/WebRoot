@@ -1,13 +1,6 @@
-@import url('https://fonts.googleapis.com/css2?family=Metrophobic&display=swap');
-body {
-    font-family: 'Metrophobic', 'sans-serif';
-}
 
-* {
-    box-sizing: border-box;
-    margin:0;
-    padding:0;
-}
+
+
 
 .nav {
     display:flex;
@@ -24,31 +17,11 @@ p {
 
 
 
-
-
 .rating{
     color:#ea9e8d;
 }
 
-.resource-card{
-    box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-    padding:20px;
-    border-radius:7px;
-    transition: 0.5s;
-}
 
-.resource-card:hover {
-    transform: scale(1.1);
-}
-
-main {
-    display:grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 500px));
-    grid-auto-rows: 1fr;
-    padding:3rem;
-    row-gap:3em;
-    column-gap: 4em;
-}
 
 a {
     font-size:2rem;
